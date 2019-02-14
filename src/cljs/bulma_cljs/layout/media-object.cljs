@@ -1,0 +1,1 @@
+(ns bulma-cljs.layout.media-object)
