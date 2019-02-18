@@ -38,6 +38,13 @@
 
 ;; components
 
+(def card cd/card)
+(def card-header cd/card-header)
+(def card-image cd/card-image)
+(def card-content cd/card-content)
+(def card-footer cd/card-footer)
+(def card-footer-item cd/card-footer-item)
+
 (def navbar nav/navbar)
 (def navbar-brand nav/navbar-brand)
 (def navbar-burger nav/navbar-burger)
