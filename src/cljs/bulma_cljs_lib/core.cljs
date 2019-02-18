@@ -59,6 +59,8 @@
 (def navbar-dropdown nav/navbar-dropdown)
 (def navbar-divider nav/navbar-divider)
 
+(def tabs tab/tabs)
+
 ;; elements
 
 (def box bx/box)
