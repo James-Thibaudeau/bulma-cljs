@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.tag)
+(ns bulma-cljs-lib.elements.tag)
 
 (defn tag-list [& tags]
   (into [:div.tags] tags))

@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.content)
+(ns bulma-cljs-lib.elements.content)
 
 (defn- content-base [size content]
   [:div {:class ["content" size]} content])

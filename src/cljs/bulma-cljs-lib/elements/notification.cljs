@@ -1,5 +1,5 @@
-(ns bulma-cljs.elements.notification
-  (:require [bulma-cljs.elements.button :as b]))
+(ns bulma-cljs-lib.elements.notification
+  (:require [bulma-cljs-lib.elements.button :as b]))
 
 (defn notification [content delete-fn]
   [:div.notification

@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.button)
+(ns bulma-cljs-lib.elements.button)
 
 (defn button [label on-click]
   [:button {:class ["button"]

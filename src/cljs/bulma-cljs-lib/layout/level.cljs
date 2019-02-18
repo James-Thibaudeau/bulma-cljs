@@ -1,4 +1,4 @@
-(ns bulma-cljs.layout.level)
+(ns bulma-cljs-lib.layout.level)
 
 (defn level [content]
   [:div.level content])

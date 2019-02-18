@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.title)
+(ns bulma-cljs-lib.elements.title)
 
 (defn title [text & [{:keys [as]
                       :or {as :h1}}]]

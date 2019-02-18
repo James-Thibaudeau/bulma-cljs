@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.icon)
+(ns bulma-cljs-lib.elements.icon)
 
 (defn- icon-base [size icon-class]
   [:span.icon (when size {:class size})

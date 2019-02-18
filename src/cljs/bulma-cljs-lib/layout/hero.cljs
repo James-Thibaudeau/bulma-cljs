@@ -1,4 +1,4 @@
-(ns bulma-cljs.layout.hero)
+(ns bulma-cljs-lib.layout.hero)
 
 (defn hero [content]
   [:section.hero content])

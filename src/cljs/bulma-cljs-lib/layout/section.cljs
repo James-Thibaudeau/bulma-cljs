@@ -1,4 +1,4 @@
-(ns bulma-cljs.layout.section)
+(ns bulma-cljs-lib.layout.section)
 
 (defn section [content]
   [:section.section content])

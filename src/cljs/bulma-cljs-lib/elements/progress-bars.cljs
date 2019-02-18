@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.progress-bars)
+(ns bulma-cljs-lib.elements.progress-bars)
 
 (defn- base-prog-bar [size color value max]
   [:progress.progress {:class [size color] 

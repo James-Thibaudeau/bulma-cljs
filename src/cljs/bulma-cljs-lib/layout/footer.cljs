@@ -1,4 +1,4 @@
-(ns bulma-cljs.layout.footer)
+(ns bulma-cljs-lib.layout.footer)
 
 (defn footer [content]
   [:footer.footer

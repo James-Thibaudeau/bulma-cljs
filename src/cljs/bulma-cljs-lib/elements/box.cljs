@@ -1,4 +1,4 @@
-(ns bulma-cljs.elements.box)
+(ns bulma-cljs-lib.elements.box)
 
 (defn box [content]
   [:div {:class ["box"]}

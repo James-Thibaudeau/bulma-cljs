@@ -1,0 +1,1 @@
+(ns bulma-cljs-lib.components.navbar)

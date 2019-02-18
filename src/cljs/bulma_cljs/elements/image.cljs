@@ -1,1 +1,0 @@
-(ns bulma-cljs.elements.image)
