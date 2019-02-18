@@ -1,5 +1,7 @@
 (ns bulma-cljs-lib.core
   (:require
+   ;; columns
+   [bulma-cljs-lib.columns.columns :as col]
    ;; components
    [bulma-cljs-lib.components.breadcrumb :as bc]
    [bulma-cljs-lib.components.card :as cd]
@@ -30,7 +32,21 @@
    [bulma-cljs-lib.layout.section :as sct]
    [bulma-cljs-lib.layout.tiles :as tl]))
 
+;; columns
+(def columns col/columns)
+(def column col/column)
+
 ;; components
+
+(def navbar nav/navbar)
+(def navbar-brand nav/navbar-brand)
+(def navbar-burger nav/navbar-burger)
+(def navbar-item nav/navbar-item)
+(def navbar-menu nav/navbar-menu)
+(def navbar-start nav/navbar-start)
+(def navbar-end nav/navbar-end)
+(def navbar-dropdown nav/navbar-dropdown)
+(def navbar-divider nav/navbar-divider)
 
 ;; elements
 

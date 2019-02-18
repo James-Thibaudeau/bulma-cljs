@@ -1,4 +1,4 @@
-(ns bulma-cljs-lib.columns)
+(ns bulma-cljs-lib.columns.columns)
 
 (defn columns [content]
   [:div.columns content])
