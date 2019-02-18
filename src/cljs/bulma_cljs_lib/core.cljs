@@ -45,6 +45,10 @@
 (def card-footer cd/card-footer)
 (def card-footer-item cd/card-footer-item)
 
+(def message msg/message)
+(def message-header msg/message-header)
+(def message-body msg/message-body)
+
 (def navbar nav/navbar)
 (def navbar-brand nav/navbar-brand)
 (def navbar-burger nav/navbar-burger)
