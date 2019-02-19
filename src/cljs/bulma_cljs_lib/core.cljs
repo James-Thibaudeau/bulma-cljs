@@ -45,6 +45,8 @@
 (def card-footer cd/card-footer)
 (def card-footer-item cd/card-footer-item)
 
+(def dropdown dd/dropdown)
+
 (def message msg/message)
 (def message-header msg/message-header)
 (def message-body msg/message-body)
