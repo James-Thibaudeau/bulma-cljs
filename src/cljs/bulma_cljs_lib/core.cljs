@@ -12,7 +12,7 @@
    [bulma-cljs-lib.components.navbar :as nav]
    [bulma-cljs-lib.components.pagination :as pag]
    [bulma-cljs-lib.components.panel :as pan]
-   [bulma-cljs-lib.components.tabs :as tab]
+   [bulma-cljs-lib.components.tabs :as tb]
    ;; elements
    [bulma-cljs-lib.elements.box :as bx]
    [bulma-cljs-lib.elements.button :as btn]
@@ -59,7 +59,11 @@
 (def navbar-dropdown nav/navbar-dropdown)
 (def navbar-divider nav/navbar-divider)
 
-(def tabs tab/tabs)
+(def panel pan/panel)
+(def panel-heading pan/panel-heading)
+(def panel-tabs pan/panel-tabs)
+
+(def tabs tb/tabs)
 
 ;; elements
 
