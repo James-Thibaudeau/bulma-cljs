@@ -23,6 +23,13 @@
    [bulma-cljs-lib.elements.progress-bars :as pb]
    [bulma-cljs-lib.elements.tag :as tg]
    [bulma-cljs-lib.elements.title :as t]
+   ;; form
+   [bulma-cljs-lib.form.checkbox :as cb]
+   [bulma-cljs-lib.form.file :as file]
+   [bulma-cljs-lib.form.input :as in]
+   [bulma-cljs-lib.form.radio :as rd]
+   [bulma-cljs-lib.form.select :as sl]
+   [bulma-cljs-lib.form.text-area :as ta]
    ;; layout
    [bulma-cljs-lib.layout.container :as cont]
    [bulma-cljs-lib.layout.footer :as ftr]
@@ -96,6 +103,15 @@
 
 (def title t/title)
 (def subtitle t/subtitle)
+
+;; Form
+
+(def checkbox cb/checkbox)
+(def file file/file)
+(def input in/input)
+(def radio rd/radio)
+(def select sl/select)
+(def text-area ta/text-area)
 
 ;; layout
 
