@@ -1,3 +1,12 @@
 (ns bulma-cljs-lib.form.select)
 
-(defn select [])
+(defn option [value text]
+  ^{:key text}[:option {:value value} text])
+
+;; making options a vector of option maps for now
+(defn select [options]
+  [:div.select
+   (into [:select]
+         (map (fn [{:keys [value text]}]
+                [option value text])
+              options))])

@@ -4,6 +4,10 @@
 (defn main-panel []
   [:div
    [bulma/title "Welcome to bulma-cljs"]
+   [bulma/select [{:value "test1" :text "test1"}
+                  {:value "test2" :text "test2"}
+                  {:value "test3" :text "test3"}
+                  {:value "test4" :text "test4"}]]
    [bulma/dropdown
     [:<>
      [:div.dropdown-trigger {:aria-controls "dropdown-menu" :aria-haspopup true}
