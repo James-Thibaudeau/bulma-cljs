@@ -87,7 +87,10 @@
 ;; elements
 
 (def box bx/box)
+
 (def button btn/button)
+(def round-button btn/round-button)
+(def inverted-button btn/inverted-button)
 (def delete-button btn/delete-button)
 
 (def content c/content)

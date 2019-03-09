@@ -17,8 +17,8 @@
     (fn []
       [:div
        [bulma/pagination 1 10]
-       [bulma/button "Click to Open Modal" #(open-fn :modal)]
-       [bulma/button "Click to Open Image Modal" #(open-fn :img)]
+       [bulma/round-button "Click to Open Modal" #(open-fn :modal) {:class ["is-primary"]}]
+       [bulma/inverted-button "Click to Open Image Modal" #(open-fn :img)]
        [bulma/button "Click to Open Card Modal" #(open-fn :card)]
        [bulma/image image-url "is-128x128"]
        [bulma/modal
