@@ -59,6 +59,8 @@
 (def menu m/menu)
 
 (def modal mod/modal)
+(def image-modal mod/image-modal)
+(def card-modal mod/card-modal)
 
 (def message msg/message)
 (def message-header msg/message-header)
