@@ -58,6 +58,8 @@
 
 (def menu m/menu)
 
+(def modal mod/modal)
+
 (def message msg/message)
 (def message-header msg/message-header)
 (def message-body msg/message-body)
