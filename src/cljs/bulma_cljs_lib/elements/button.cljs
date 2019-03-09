@@ -6,6 +6,11 @@
     :onClick on-click}
    label])
 
+;; use a fragment to add buttons to the buttons list
+(defn button-list [buttons & [{:keys [class]}]]
+  [:div.buttons
+   {:class class}
+   buttons])
 
 (defn delete-button [on-click & [{:keys [class]}]]
   [:button.delete {:class class
@@ -22,4 +27,3 @@
    {:class (into ["is-rounded"] class)
     :onClick on-click}
    label])
-

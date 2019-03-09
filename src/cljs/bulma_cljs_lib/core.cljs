@@ -89,9 +89,12 @@
 (def box bx/box)
 
 (def button btn/button)
-(def round-button btn/round-button)
-(def inverted-button btn/inverted-button)
+(def button-list btn/button-list)
 (def delete-button btn/delete-button)
+(def inverted-button btn/inverted-button)
+(def round-button btn/round-button)
+
+
 
 (def content c/content)
 (def sm-content c/sm-content)
