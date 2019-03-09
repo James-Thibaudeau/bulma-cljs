@@ -94,8 +94,6 @@
 (def inverted-button btn/inverted-button)
 (def round-button btn/round-button)
 
-
-
 (def content c/content)
 (def sm-content c/sm-content)
 (def md-content c/md-content)
@@ -107,6 +105,7 @@
 (def lg-icon i/icon)
 
 (def image img/image)
+(def round-image img/round-image)
 
 (def notification n/notification)
 

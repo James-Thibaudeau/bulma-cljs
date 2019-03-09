@@ -27,5 +27,9 @@
 ; is-1by3
 
 (defn image [src ratio]
-  [:figure.image {:class [ratio]}
+  [:figure.image {:class ratio}
+   [:img {:src src}]])
+
+(defn round-image [src ratio]
+  [:figure.image {:class ["is-rounded" ratio]}
    [:img {:src src}]])

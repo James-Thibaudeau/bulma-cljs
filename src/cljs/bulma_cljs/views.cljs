@@ -22,7 +22,7 @@
          [bulma/round-button "Click to Open Modal" #(open-fn :modal) {:class ["is-primary"]}]
          [bulma/inverted-button "Click to Open Image Modal" #(open-fn :img)]
          [bulma/button "Click to Open Card Modal" #(open-fn :card)]]
-        {:class ["has-addons"]}]
+        {:class ["has-addons" "are-large"]}]
        
        [bulma/image image-url "is-128x128"]
        [bulma/modal
