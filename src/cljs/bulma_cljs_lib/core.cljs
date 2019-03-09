@@ -45,6 +45,8 @@
 
 ;; components
 
+(def breadcrumb bc/breadcrumb)
+
 (def card cd/card)
 (def card-header cd/card-header)
 (def card-image cd/card-image)

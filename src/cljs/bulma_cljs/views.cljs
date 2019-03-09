@@ -3,6 +3,9 @@
 
 (defn main-panel []
   [:div
+   [bulma/breadcrumb [{:text "test1" :on-click identity :active? true}
+                      {:text "test2" :on-click identity :active? false}
+                      {:text "test3" :on-click identity :active? false}]]
    [bulma/title "Welcome to bulma-cljs"]
    [bulma/select [{:value "test1" :text "test1"}
                   {:value "test2" :text "test2"}
