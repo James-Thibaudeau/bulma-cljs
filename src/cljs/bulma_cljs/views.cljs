@@ -3,6 +3,11 @@
 
 (defn main-panel []
   [:div
+   
+   [bulma/menu [{:label "General" :items ["test1" "test2" "test3"]}
+                {:label "Advanced" :items ["test1" "test2" "test3"]}
+                {:label "Options" :items ["test1" "test2" "test3"]}]]
+   
    [bulma/breadcrumb [{:text "test1" :on-click identity :active? true}
                       {:text "test2" :on-click identity :active? false}
                       {:text "test3" :on-click identity :active? false}]]

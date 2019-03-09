@@ -56,6 +56,8 @@
 
 (def dropdown dd/dropdown)
 
+(def menu m/menu)
+
 (def message msg/message)
 (def message-header msg/message-header)
 (def message-body msg/message-body)
