@@ -31,5 +31,6 @@
    [:img {:src src}]])
 
 (defn round-image [src ratio]
-  [:figure.image {:class ["is-rounded" ratio]}
-   [:img {:src src}]])
+  [:figure.image {:class ratio}
+   [:img {:class "is-rounded"
+          :src src}]])

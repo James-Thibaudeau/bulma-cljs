@@ -24,7 +24,7 @@
          [bulma/button "Click to Open Card Modal" #(open-fn :card)]]
         {:class ["has-addons" "are-large"]}]
        
-       [bulma/image image-url "is-128x128"]
+       [bulma/round-image image-url "is-128x128"]
        [bulma/modal
         (:modal @active?)
         #(close-fn :modal)
