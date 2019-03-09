@@ -1,5 +1,6 @@
 (ns bulma-cljs-lib.components.pagination)
 
+;; this is just a basic start for pagination needs work
 (defn pagination [current pages]
   [:nav.pagination
    [:a.pagination-previous "Previous"]
