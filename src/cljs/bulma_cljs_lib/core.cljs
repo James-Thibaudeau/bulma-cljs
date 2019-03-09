@@ -100,6 +100,8 @@
 (def md-icon i/icon)
 (def lg-icon i/icon)
 
+(def image img/image)
+
 (def notification n/notification)
 
 (def sm-prog-bar pb/sm-prog-bar)
