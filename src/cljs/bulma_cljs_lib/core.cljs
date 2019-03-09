@@ -76,6 +76,8 @@
 (def navbar-dropdown nav/navbar-dropdown)
 (def navbar-divider nav/navbar-divider)
 
+(def pagination pag/pagination)
+
 (def panel pan/panel)
 (def panel-heading pan/panel-heading)
 (def panel-tabs pan/panel-tabs)
