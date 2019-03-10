@@ -12,7 +12,7 @@ if not defaults to index"
    (fn [index item]
      (if (:key (meta item))
        item
-       (with-meta %2  {:key %1})))
+       (with-meta item {:key index})))
    elements))
 
 (defn navbar [& content]
