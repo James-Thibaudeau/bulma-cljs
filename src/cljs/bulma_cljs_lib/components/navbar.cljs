@@ -1,19 +1,22 @@
 (ns bulma-cljs-lib.components.navbar)
 
+;; going with this map-indexed to map children 
+;; for now might be able to do better
+
+(defn children [elements]
+  (map-indexed
+   #(with-meta %2  {:key %1})
+   elements))
 
 (defn navbar [& content]
   [:nav.navbar
-   (map-indexed
-    #(with-meta %2  {:key %1})
-    content)])
+   (children content)])
 
 (defn navbar-brand [logo-src & content]
   [:div.navbar-brand
    [:a.navbar-item
     [:img {:src logo-src}]]
-   (map-indexed
-    #(with-meta %2  {:key %1})
-    content)])
+   (children content)])
 
 (defn navbar-burger []
   [:a.navbar-burger
@@ -27,27 +30,21 @@
 
 (defn navbar-menu [& content]
   [:div.navbar-menu
-   (map-indexed
-    #(with-meta %2  {:key %1})
-    content)])
+   (children content)])
 
 (defn navbar-start [& content]
   [:div.navbar-start
-   (map-indexed
-    #(with-meta %2  {:key %1})
-    content)])
+   (children content)])
 
 (defn navbar-end [& content]
   [:div.navbar-end
-   (map-indexed
-    #(with-meta %2  {:key %1})
-    content)])
+   (children content)])
 
-(defn navbar-dropdown [title content]
+(defn navbar-dropdown [title & content]
   [:div.navbar-item.has-dropdown
    [:a.navbar-link title]
    [:div.navbar-dropdown
-    content]])
+    (children content)]])
 
 (defn navbar-divider []
   [:hr.navbar-divider])
