@@ -3,9 +3,16 @@
 ;; going with this map-indexed to map children 
 ;; for now might be able to do better
 
-(defn children [elements]
+(defn children
+  "children is used to populate the children of a 
+component, if key is already provided will use that, 
+if not defaults to index"
+  [elements]
   (map-indexed
-   #(with-meta %2  {:key %1})
+   (fn [index item]
+     (if (:key (meta item))
+       item
+       (with-meta %2  {:key %1})))
    elements))
 
 (defn navbar [& content]
