@@ -21,6 +21,7 @@
    [bulma-cljs-lib.elements.image :as img]
    [bulma-cljs-lib.elements.notification :as n]
    [bulma-cljs-lib.elements.progress-bars :as pb]
+   [bulma-cljs-lib.elements.table :as tbl]
    [bulma-cljs-lib.elements.tag :as tg]
    [bulma-cljs-lib.elements.title :as t]
    ;; form
@@ -113,6 +114,8 @@
 (def prog-bar pb/prog-bar)
 (def md-prog-bar pb/md-prog-bar)
 (def lg-prog-bar pb/lg-prog-bar)
+
+(def table tbl/table)
 
 (def tag-list tg/tag-list)
 (def tag tg/tag)
