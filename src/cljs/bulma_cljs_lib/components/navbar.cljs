@@ -19,9 +19,9 @@
    [:span]
    [:span]])
 
-(defn navbar-item [content]
+(defn navbar-item [content & [{:keys [on-click]}]]
   [:div.navbar-item
-   [:a content]])
+   [:a {:on-click on-click} content]])
 
 (defn navbar-menu [& content]
   [:div.navbar-menu

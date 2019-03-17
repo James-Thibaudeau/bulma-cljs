@@ -4,9 +4,7 @@
    [re-frame.core :as re-frame]
    [bulma-cljs.events :as events]
    [bulma-cljs.views :as views]
-   [bulma-cljs.config :as config]
-   ))
-
+   [bulma-cljs.config :as config]))
 
 (defn dev-setup []
   (when config/debug?

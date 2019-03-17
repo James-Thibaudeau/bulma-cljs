@@ -7,3 +7,9 @@
  ::initialize-db
  (fn [_ _]
    db/default-db))
+
+
+(defn change-page [db [_ page-key]]
+  (assoc db :current-page page-key))
+
+(re-frame/reg-event-db ::change-page change-page)
