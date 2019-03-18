@@ -4,3 +4,7 @@
 /resources/public/js/compiled
 out
 .rebel_readline_history
+*.iml
+/.idea
+.DS_Store
+src/.DS_Store
