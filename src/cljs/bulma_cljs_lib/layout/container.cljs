@@ -1,4 +1,10 @@
-(ns bulma-cljs-lib.layout.container)
+(ns bulma-cljs-lib.layout.container
+  (:require [bulma-cljs-lib.utils :refer [children]]))
 
-(defn container [content & [{:keys [is-fluid?]}]]
-   [:div.container {:class [(when is-fluid? "is-fluid")]} content])
+(defn fluid-container [& content]
+  [:div.container.is-fluid
+   (children content)])
+
+(defn container [& content]
+   [:div.container  
+    (children content)])

@@ -1,5 +1,6 @@
 (ns bulma-cljs-lib.utils)
 
+;; This is not ideal, strings as children can't have meta
 (defn children
   "children is used to populate the children of 
    a component, if key is already provided will 

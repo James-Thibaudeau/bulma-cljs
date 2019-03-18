@@ -1,8 +1,6 @@
 (ns bulma-cljs-lib.components.navbar
   [:require [bulma-cljs-lib.utils :refer [children]]])
 
-
-
 (defn navbar [& content]
   [:nav.navbar
    (children content)])
