@@ -1,8 +1,15 @@
 (defproject bulma-cljs "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.238"]
+                 [org.clojure/core.async "0.4.474"]
+                 [com.cemerick/piggieback "0.2.1"]
+                 [figwheel-sidecar "0.5.16"]
                  [reagent "0.8.1"]
                  [re-frame "0.10.6"]]
+
+  :repl-options {:init (do (use 'figwheel-sidecar.repl-api)
+                           (start-figwheel!))
+                 :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :plugins [[lein-cljsbuild "1.1.7"]]
 
@@ -17,7 +24,6 @@
   :profiles
   {:dev
    {:dependencies [[binaryage/devtools "0.9.10"]]
-
     :plugins      [[lein-figwheel "0.5.16"]]}
    :prod {}}
 
