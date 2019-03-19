@@ -7,8 +7,7 @@
                  [reagent "0.8.1"]
                  [re-frame "0.10.6"]]
 
-  :repl-options {:init (do (use 'figwheel-sidecar.repl-api)
-                           (start-figwheel!))
+  :repl-options {:init-ns dev.user
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :plugins [[lein-cljsbuild "1.1.7"]]
