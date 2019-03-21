@@ -18,8 +18,8 @@
 ;is-two-fifths
 ;is-one-fifth
 
-(defn columns [props & content]
-  (into [:div.columns props] content))
+(defn columns [content]
+  (into [:div.columns] content))
 
-(defn column [props & content]
-  (into [:div.column props] content))
+(defn column [content]
+  (into [:div.column] content))
