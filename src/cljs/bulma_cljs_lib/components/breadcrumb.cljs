@@ -11,5 +11,6 @@
    (into
     [:ul]
     (map (fn [props]
+           ^{:key (:text props)}
            [crumb props])
          options))])
