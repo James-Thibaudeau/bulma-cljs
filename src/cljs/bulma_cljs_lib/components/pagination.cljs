@@ -32,7 +32,6 @@
                      (swap! current-page dec)))]
     (fn [{:keys [initial-page total-pages on-change-page]}]
       (let [{:keys [start-page end-page]} (pages-fn! total-pages @current-page)
-            _ (println total-pages)
             start-page? (= @current-page start-page)
             end-page? (= @current-page end-page)]
         [:nav.pagination
