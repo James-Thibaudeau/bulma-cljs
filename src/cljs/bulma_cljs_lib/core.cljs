@@ -58,6 +58,7 @@
 (def dropdown dd/dropdown)
 
 (def menu m/menu)
+(def sub-menu m/sub-menu)
 
 (def modal mod/modal)
 (def image-modal mod/image-modal)

@@ -1,16 +1,24 @@
 (ns bulma-cljs-lib.components.menu)
 
+;; sub-menu - example props
+;; {:label "documentation"
+;;  :items [{:item "Layout"
+;;           :on-click (fn [])}
+;;          {:item "Columns"
+;;           :on-click (fn [])}]
+
 (defn sub-menu [{:keys [label items]}]
   [:<>
    [:p.menu-label label]
    (into
     [:ul.menu-list]
-    (map (fn [item]
-           [:li [:a item]])
+    (map (fn [{:keys [item on-click]}]
+           ^{:key (str label item)}
+           [:li
+            [:a
+             {:on-click on-click}
+             item]])
          items))])
 
-(defn menu [menus]
-  (into [:aside.menu]
-        (map (fn [menu-props]
-               [sub-menu menu-props])
-             menus)))
+(defn menu [& content]
+  (into [:aside.menu] content))
