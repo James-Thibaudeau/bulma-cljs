@@ -1,5 +1,5 @@
 (ns bulma-cljs-lib.layout.footer)
 
-(defn footer [content]
+(defn footer [& content]
   [:footer.footer
-   [:div.content.has-text-centered content]])
+   (into [:div.content.has-text-centered] content)])

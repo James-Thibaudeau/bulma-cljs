@@ -1,10 +1,10 @@
 (ns bulma-cljs-lib.layout.section)
 
-(defn section [content]
-  [:section.section content])
+(defn section [& content]
+  (into [:section.section] content))
 
 (defn md-section [content]
-  [:section.section.is-medium content])
+  (into [:section.section.is-medium] content))
 
 (defn lg-section [content]
-  [:section.section.is-large content])
+  (into [:section.section.is-large] content))

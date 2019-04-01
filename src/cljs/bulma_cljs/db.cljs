@@ -1,4 +1,5 @@
 (ns bulma-cljs.db)
 
 (def default-db
-  {:current-page :home})
+  {:current-page :home
+   :documentation {:current-page :pagination}})

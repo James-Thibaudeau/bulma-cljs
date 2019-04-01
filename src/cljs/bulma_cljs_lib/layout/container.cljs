@@ -2,9 +2,7 @@
   (:require [bulma-cljs-lib.utils :refer [children]]))
 
 (defn fluid-container [& content]
-  [:div.container.is-fluid
-   (children content)])
+  (into [:div.container.is-fluid] content))
 
 (defn container [& content]
-   [:div.container  
-    (children content)])
+  (into [:div.container] content))

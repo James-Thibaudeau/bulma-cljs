@@ -1,10 +1,10 @@
 (ns bulma-cljs-lib.components.message)
 
-(defn message [content]
-  [:article.message content])
+(defn message [& content]
+  (into [:article.message] content))
 
-(defn message-header [content]
-  [:div.message-header content])
+(defn message-header [& content]
+  (into [:div.message-header] content))
 
-(defn message-body [content]
-  [:div.message-body content])
+(defn message-body [& content]
+  (into [:div.message-body] content))

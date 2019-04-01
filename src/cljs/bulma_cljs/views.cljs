@@ -24,7 +24,7 @@
 (defn main-panel []
   (let [current-page (re-frame/subscribe [::subs/current-page])]
     (fn []
-      [b/container
+      [:<>
        [b/navbar
         [b/navbar-brand
          bulma-logo
@@ -35,4 +35,5 @@
           [b/navbar-item "Documentation" {:on-click #(navigate :documentation)}]]
          [b/navbar-end
           [b/navbar-item "Github"]]]]
-       [router @current-page]])))
+       [b/container
+        [router @current-page]]])))
