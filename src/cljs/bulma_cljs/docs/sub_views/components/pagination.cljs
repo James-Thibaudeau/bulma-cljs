@@ -1,7 +1,7 @@
-(ns bulma-cljs.documentation.views.pagination
+(ns bulma-cljs.docs.sub-views.components.pagination
   (:require [bulma-cljs-lib.core :as b]))
 
-(defn pagination []
+(defn main []
   [b/section
    [b/subtitle "Pagination"]
    [b/content "This is an example of the pagination component"]

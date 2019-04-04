@@ -1,7 +1,7 @@
-(ns bulma-cljs.documentation.views.message
+(ns bulma-cljs.docs.sub-views.components.message
   (:require [bulma-cljs-lib.core :as b]))
 
-(defn message []
+(defn main []
   [b/section
    [b/subtitle "Message"]
    [b/content "This is an example of the Message component"]

@@ -1,4 +1,4 @@
-(ns bulma-cljs.documentation.subs
+(ns bulma-cljs.docs.subs
   (:require [re-frame.core :as re-frame]))
 
 (re-frame/reg-sub

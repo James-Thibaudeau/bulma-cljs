@@ -1,4 +1,4 @@
 (ns bulma-cljs.home.views)
 
-(defn home []
+(defn main []
   [:h1 "Home"])

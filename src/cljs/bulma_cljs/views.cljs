@@ -5,7 +5,7 @@
    [bulma-cljs-lib.core :as b]
    [bulma-cljs.events :as events]
    [bulma-cljs.subs :as subs]
-   [bulma-cljs.documentation.views :as docs]
+   [bulma-cljs.docs.views :as docs]
    [bulma-cljs.home.views :as home]))
 
 (def bulma-logo
@@ -15,8 +15,8 @@
   (re-frame/dispatch [::events/change-page page-key]))
 
 (def routes
-  {:home [home/home]
-   :documentation [docs/documentation]})
+  {:home [home/main]
+   :documentation [docs/main]})
 
 (defn router [page-key]
   (page-key routes))

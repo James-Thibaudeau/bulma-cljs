@@ -1,7 +1,7 @@
 (ns bulma-cljs-lib.components.menu)
 
 ;; sub-menu - example props
-;; {:label "documentation"
+;; {:label "docs"
 ;;  :items [{:item "Layout"
 ;;           :on-click (fn [])}
 ;;          {:item "Columns"

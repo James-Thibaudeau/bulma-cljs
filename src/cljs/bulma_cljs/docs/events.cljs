@@ -1,4 +1,4 @@
-(ns bulma-cljs.documentation.events
+(ns bulma-cljs.docs.events
   (:require [re-frame.core :as re-frame]))
 
 
