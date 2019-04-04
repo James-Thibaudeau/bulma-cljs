@@ -47,11 +47,11 @@
                 :tag           [tag/main]
                 :title         [title/main]}})
 
-(defn router [page-key]
-  (page-key routes))
+(defn router [page-keys]
+  (get-in routes page-keys))
 
-(defn navigate [page-key]
-  (re-frame/dispatch [::d-events/change-page page-key]))
+(defn navigate [page-keys]
+  (re-frame/dispatch [::d-events/change-page page-keys]))
 
 (def menus
   (reduce-kv (fn [prev k v]
@@ -59,7 +59,7 @@
                  k {:label (-> k name capitalize)
                     :items (mapv (fn [item]
                                    {:item     (-> item name capitalize)
-                                    :on-click #(navigate item)})
+                                    :on-click #(navigate [k item])})
                                  (keys v))}))
              {}
              routes))
