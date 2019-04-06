@@ -19,7 +19,7 @@
       [b/section
        [b/subtitle "Progress Bars"]
        [b/content "This is an example of the progress-bars component"]
-       [b/content
+       [b/button-list
         [b/button "Increase" increase-fn]
         [b/button "Decrease" decrease-fn]]
        [b/content
