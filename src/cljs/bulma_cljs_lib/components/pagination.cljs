@@ -5,16 +5,16 @@
 ;; updated pagination, still not %100, but a lot better
 
 (defn pages-fn! [total-pages current-page]
-  (if (<= total-pages 10)
+  (cond
+    (<= total-pages 10)
     {:start-page 1 :end-page total-pages}
-    (cond
-      (< current-page 6)
-      {:start-page 1 :end-page 10}
-      (> (+ 4 current-page)
-         total-pages)
-      {:start-page (- total-pages 9) :end-page total-pages}
-      :else
-      {:start-page (- current-page 5) :end-page (+ current-page 4)})))
+    (< current-page 6)
+    {:start-page 1 :end-page 10}
+    (> (+ 4 current-page)
+       total-pages)
+    {:start-page (- total-pages 9) :end-page total-pages}
+    :else
+    {:start-page (- current-page 5) :end-page (+ current-page 4)}))
 
 
 (defn pagination [{:keys [initial-page total-pages on-change-page]}]

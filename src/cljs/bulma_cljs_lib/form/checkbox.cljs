@@ -2,4 +2,5 @@
 
 (defn checkbox [text]
   [:label.checkbox
-   [:input {:type "checkbox"}]])
+   [:input {:type "checkbox"}]
+   [:span text]])

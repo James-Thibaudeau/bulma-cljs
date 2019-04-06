@@ -6,5 +6,5 @@
 (defn media-left [& content]
   (into [:figure.media-left] content))
 
-(defn media-right [content]
+(defn media-right [& content]
   (into [:div.media-right] content))

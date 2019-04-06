@@ -1,13 +1,13 @@
 (ns bulma-cljs-lib.layout.hero)
 
-(defn hero [content]
-  [:section.hero content])
+(defn hero [& content]
+  (into [:section.hero] content))
 
-(defn hero-body [content]
-  [:div.hero-body content])
+(defn hero-body [& content]
+  (into [:div.hero-body] content))
 
-(defn hero-head [content]
-  [:div.hero-head content])
+(defn hero-head [& content]
+  (into [:div.hero-head] content))
 
-(defn hero-foot [content]
-  [:div.hero-foot])
+(defn hero-foot [& content]
+  (into [:div.hero-foot] content))

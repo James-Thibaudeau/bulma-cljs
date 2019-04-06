@@ -97,9 +97,6 @@
 (def round-button btn/round-button)
 
 (def content c/content)
-(def sm-content c/sm-content)
-(def md-content c/md-content)
-(def lg-content c/lg-content)
 
 (def sm-icon i/sm-icon)
 (def icon i/icon)

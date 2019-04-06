@@ -2,8 +2,7 @@
   [:require [bulma-cljs-lib.utils :refer [children]]])
 
 (defn navbar [& content]
-  [:nav.navbar
-   (children content)])
+  (into [:nav.navbar] content))
 
 (defn navbar-brand [logo-src & content]
   [:div.navbar-brand
@@ -22,22 +21,18 @@
    [:a {:on-click on-click} content]])
 
 (defn navbar-menu [& content]
-  [:div.navbar-menu
-   (children content)])
+  (into [:div.navbar-menu] content))
 
 (defn navbar-start [& content]
-  [:div.navbar-start
-   (children content)])
+  (into [:div.navbar-start] content))
 
 (defn navbar-end [& content]
-  [:div.navbar-end
-   (children content)])
+  (into [:div.navbar-end] content))
 
 (defn navbar-dropdown [title & content]
   [:div.navbar-item.has-dropdown
    [:a.navbar-link title]
-   [:div.navbar-dropdown
-    (children content)]])
+   (into [:div.navbar-dropdown] content)])
 
 (defn navbar-divider []
   [:hr.navbar-divider])
