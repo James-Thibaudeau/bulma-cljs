@@ -13,8 +13,8 @@
         decrease-fn (fn []
                       (swap! progress
                              #(if (> % 0)
-                                         (dec %)
-                                         %)))]
+                                (dec %)
+                                %)))]
     (fn []
       [b/section
        [b/subtitle "Progress Bars"]
@@ -25,19 +25,19 @@
        [b/content
         [b/box
          [:p "Normal Progress Bar"]
-         [b/prog-bar "is-primary" @progress 10]]]
+         [b/prog-bar "is-primary" @progress max]]]
        [b/content
         [b/box
          [:p "Small Progress Bar"]
-         [b/sm-prog-bar "is-info" @progress 10]]]
+         [b/sm-prog-bar "is-info" @progress max]]]
        [b/content
         [b/box
          [:p "Medium Progress Bar"]
-         [b/md-prog-bar "is-warning" @progress 10]]]
+         [b/md-prog-bar "is-warning" @progress max]]]
        [b/content
         [b/box
          [:p "Large Progress Bar"]
-         [b/lg-prog-bar "is-danger" @progress 10]]]
+         [b/lg-prog-bar "is-danger" @progress max]]]
        [b/content
         [b/box
          [:p "Indeterminate Progress Bar"]
