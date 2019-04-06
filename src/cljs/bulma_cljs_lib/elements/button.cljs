@@ -7,10 +7,8 @@
    label])
 
 ;; use a fragment to add buttons to the buttons list
-(defn button-list [buttons & [{:keys [class]}]]
-  [:div.buttons
-   {:class class}
-   buttons])
+(defn button-list [& content]
+  (into [:div.buttons] content))
 
 (defn delete-button [on-click & [{:keys [class]}]]
   [:button.delete {:class class
