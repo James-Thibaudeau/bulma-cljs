@@ -1,9 +1,9 @@
-(defproject bulma-cljs "0.1.0-SNAPSHOT"
+(defproject bulma-cljs "0.1.0"
+  :description "A Reagent component library using Bulma"
+  :url "https://github.com/James-Thibaudeau/bulma-cljs"
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async "0.4.474"]
-                 [com.cemerick/piggieback "0.2.1"]
-                 [figwheel-sidecar "0.5.16"]
                  [reagent "0.8.1"]
                  [re-frame "0.10.6"]]
 
@@ -22,7 +22,9 @@
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.9.10"]]
+   {:dependencies [[binaryage/devtools "0.9.10"]
+                   [com.cemerick/piggieback "0.2.1"]
+                   [figwheel-sidecar "0.5.16"]]
     :plugins      [[lein-figwheel "0.5.16"]]}
    :prod {}}
 
@@ -39,9 +41,9 @@
                     :preloads             [devtools.preload]
                     :external-config      {:devtools/config {:features-to-install :all}}}}
 
-    {:id           "min"
-     :source-paths ["src/cljs"]
-     :compiler     {:main            bulma-cljs.core
+    {:id           "prod"
+     :source-paths ["src/cljs/bulma_cljs_lib"]
+     :compiler     {:main            bulma-cljs-lib.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}
