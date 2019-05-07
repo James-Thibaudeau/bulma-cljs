@@ -1,4 +1,4 @@
-(defproject bulma-cljs "0.1.0"
+(defproject bulma-cljs "0.1.1"
   :description "A Reagent component library using Bulma"
   :url "https://github.com/James-Thibaudeau/bulma-cljs"
   :license {:name "MIT"}
@@ -43,7 +43,7 @@
                     :external-config      {:devtools/config {:features-to-install :all}}}}
 
     {:id           "prod"
-     :source-paths ["src/cljs/bulma_cljs_lib"]
+     :source-paths ["src/cljs/bulma-cljs-lib"]
      :compiler     {:main            bulma-cljs-lib.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
