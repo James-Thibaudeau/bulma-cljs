@@ -1,6 +1,7 @@
 (defproject bulma-cljs "0.1.0"
   :description "A Reagent component library using Bulma"
   :url "https://github.com/James-Thibaudeau/bulma-cljs"
+  :license {:name "MIT"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async "0.4.474"]
