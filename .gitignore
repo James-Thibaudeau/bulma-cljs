@@ -9,3 +9,5 @@ out
 .DS_Store
 src/.DS_Store
 .nrepl-port
+pom.xml
+pom.xml.asc
