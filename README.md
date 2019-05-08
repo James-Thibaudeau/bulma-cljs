@@ -10,7 +10,7 @@ Include bulma-cljs in your project.clj
 
 ```[bulma-cljs "VERSION_NUMBER"]```
 
-Include Bulma CSS in your index.html file of your Reagent App.
+Include Bulma CSS in your Reagent App however you see fit.
 
 Can get the CSS at [bulma.io](https://bulma.io)
 
