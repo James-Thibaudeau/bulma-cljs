@@ -8,7 +8,7 @@ Reagent component library for Bulma
 
 Include bulma-cljs in your project.clj
 
-```[bulma-cljs "0.1.1"]```
+```[bulma-cljs "VERSION_NUMBER"]```
 
 Include Bulma CSS in your index.html file of your Reagent App.
 
