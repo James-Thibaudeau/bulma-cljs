@@ -5,8 +5,7 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async "0.4.474"]
-                 [reagent "0.8.1"]
-                 [re-frame "0.10.6"]]
+                 [reagent "0.8.1"]]
 
   :repl-options {:init-ns dev.user
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
