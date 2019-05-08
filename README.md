@@ -12,6 +12,8 @@ Include bulma-cljs in your project.clj
 
 Include Bulma CSS in your index.html file of your Reagent App.
 
+Can get the CSS at [bulma.io](https://bulma.io)
+
 Require bulma-cljs in your views
 
 ```
