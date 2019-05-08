@@ -1,4 +1,4 @@
-(defproject bulma-cljs "0.1.2"
+(defproject bulma-cljs "0.1.3"
   :description "A Reagent component library using Bulma"
   :url "https://github.com/James-Thibaudeau/bulma-cljs"
   :license {:name "MIT"}
