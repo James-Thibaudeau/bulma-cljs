@@ -18,5 +18,5 @@ Require bulma-cljs in your views
 
 ```
 (ns my-project.views
-     (:require [bulma-cljs-lib.core :as b]))
+     (:require [bulma-cljs.core :as b]))
 ```

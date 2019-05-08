@@ -22,28 +22,17 @@
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.9.10"]
-                   [com.cemerick/piggieback "0.2.1"]
-                   [figwheel-sidecar "0.5.16"]]
-    :plugins      [[lein-figwheel "0.5.16"]]}
+         {:dependencies [[binaryage/devtools "0.9.10"]
+                         [com.cemerick/piggieback "0.2.1"]
+                         [figwheel-sidecar "0.5.16"]]
+          :plugins      [[lein-figwheel "0.5.16"]]}
    :prod {}}
 
   :cljsbuild
   {:builds
-   [{:id           "dev"
-     :source-paths ["src/cljs"]
-     :figwheel     {:on-jsload "bulma-cljs.core/mount-root"}
-     :compiler     {:main                 bulma-cljs.core
-                    :output-to            "resources/public/js/compiled/app.js"
-                    :output-dir           "resources/public/js/compiled/out"
-                    :asset-path           "js/compiled/out"
-                    :source-map-timestamp true
-                    :preloads             [devtools.preload]
-                    :external-config      {:devtools/config {:features-to-install :all}}}}
-
-    {:id           "prod"
-     :source-paths ["src/cljs/bulma-cljs-lib"]
-     :compiler     {:main            bulma-cljs-lib.core
+   [{:id           "prod"
+     :source-paths ["src/cljs/bulma-cljs"]
+     :compiler     {:main            bulma-cljs.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}
