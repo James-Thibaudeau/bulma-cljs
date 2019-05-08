@@ -4,25 +4,17 @@ Reagent component library for Bulma
 
 [![Clojars Project](https://img.shields.io/clojars/v/bulma-cljs.svg)](https://clojars.org/bulma-cljs)
 
-## Development Mode
+## How to use
 
-### Run application:
+Include bulma-cljs in your project.clj
 
-```
-lein clean
-lein figwheel dev
-```
+```[bulma-cljs "0.1.1"]```
 
-Figwheel will automatically push cljs changes to the browser.
+Include Bulma CSS in your index.html file of your Reagent App.
 
-Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
-
-## Production Build
-
-
-To compile clojurescript to javascript:
+Require bulma-cljs in your views
 
 ```
-lein clean
-lein cljsbuild once min
+(ns my-project.views
+     (:require [bulma-cljs-lib.core :as b]))
 ```
