@@ -2,6 +2,8 @@
 
 Reagent component library for Bulma
 
+[![Clojars Project](https://img.shields.io/clojars/v/bulma-cljs.svg)](https://clojars.org/bulma-cljs)
+
 ## Development Mode
 
 ### Run application:
